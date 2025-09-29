@@ -40,6 +40,46 @@ $(document).ready(function() {
     }
   });
 
+	// shoes gallery
+	 $('.shoes__item-gallery_wrap').owlCarousel({
+    responsiveClass:true,
+    responsive:{
+        0:{
+				    loop:true,
+				    margin: 250,
+				    items: 1,
+				    center: true,
+				    dots: true,
+				    nav: true,
+				    autoWidth: true,
+				    navContainer: '.shoes__item-gallery_navs',
+				    dotsContainer: '.shoes__item-gallery_dots',
+        },
+        768:{
+            loop:true,
+				    margin: 250,
+				    items: 1,
+				    center: true,
+				    dots: true,
+				    nav: true,
+				    autoWidth: true,
+				    navContainer: '.shoes__item-gallery_navs',
+				    dotsContainer: '.shoes__item-gallery_dots',
+        },
+        992:{
+            loop:true,
+				    margin: 120,
+				    items: 1,
+				    center: true,
+				    dots: true,
+				    nav: true,
+				    autoWidth: true,
+				    navContainer: '.shoes__item-gallery_navs',
+				    dotsContainer: '.shoes__item-gallery_dots',
+        }
+    }
+  });
+
 	// form
 	$( '.header__bottom-form button' ).addClass( 'footer__form-button' );
   $( '.header__bottom-form .order-form' ).addClass( 'footer__form-order' );
