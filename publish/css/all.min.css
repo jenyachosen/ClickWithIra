@@ -1166,7 +1166,7 @@ p {
 .about__title {
   width: 80%;
   color: #233a6a;
-  margin: 10px auto 25px;
+  margin: 40px auto 0px;
   text-align: center;
   font-size: 28px;
   font-family: "OpenSansBold";
@@ -1180,6 +1180,17 @@ p {
 
 .about__title-gallery {
   color: #fff;
+}
+
+.gallery .about__item-gallery {
+  float: none;
+  margin: 0 auto 85px;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery .about__item-gallery {
+    margin: 0 auto 50px;
+  }
 }
 
 .about__item:before,
