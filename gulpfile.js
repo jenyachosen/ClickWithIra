@@ -26,7 +26,7 @@ gulp.task('dev_compress_js', function (cb) {
         // uglify({'mangle': false}),
         concat('main.min.js'),
         // sourcemaps.write(),
-        gulp.dest('./public/js')
+        gulp.dest('./publish/js')
     ],
     cb
   );
@@ -37,7 +37,7 @@ gulp.task('prod_compress_js', function (cb) {
         gulp.src( path_js_files ),
         uglify({'mangle': false}),
         concat('main.min.js'),
-        gulp.dest('./public/js')
+        gulp.dest('./publish/js')
     ],
     cb
   );
@@ -53,7 +53,7 @@ gulp.task('dev_concat_css', function () {
         cascade: false
      }))
     // .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/css/'));
+    .pipe(gulp.dest('./publish/css/'));
 });
 
 gulp.task('prod_minify_css', function () {
@@ -61,7 +61,7 @@ gulp.task('prod_minify_css', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(concatCss("all.min.css"))
         .pipe(cssmin())
-        .pipe(gulp.dest('./public/css/'));
+        .pipe(gulp.dest('./publish/css/'));
 });
 
 gulp.task('browser-sync', function () {
