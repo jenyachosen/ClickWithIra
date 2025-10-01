@@ -454,8 +454,6 @@ p {
 
 .header__bottom {
   min-height: 935px;
-  /*background: url("../img/bg-main.jpg") no-repeat top/cover;*/
-  background: url("../img/enroll-top-short2.png") no-repeat top/contain;
   position: relative;
   color: #fff;
 }
@@ -463,7 +461,6 @@ p {
 @media screen and (max-width: 768px) {
   .header__bottom {
     min-height: 700px;
-    background: url("../img/enroll-top-short2.png") no-repeat top/cover;
     /*min-height: 0;
         height: auto;*/
     padding-bottom: 70px;
@@ -1170,7 +1167,7 @@ p {
   color: #233a6a;
   margin: 10px auto 25px;
   text-align: center;
-  font-size: 38px;
+  font-size: 28px;
   font-family: "OpenSansBold";
 }
 
@@ -1988,10 +1985,23 @@ p {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .reviews {
+    min-height: 700px;
+    padding-bottom: 0px;
+  }
+}
+
 .reviews__title {
   text-align: center;
   font-size: 42px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    margin-bottom: 80px;
+  }
 }
 
 .reviews__bottom:before,
@@ -2032,6 +2042,7 @@ p {
   .reviews__bottom-item {
     width: 303px;
     margin: 10px;
+    min-height: 200px;
   }
 }
 
@@ -2042,6 +2053,13 @@ p {
     margin: 0 auto 20px;
     width: 90%;
     max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews__bottom-item {
+    min-height: auto;
+    margin: 20px auto;
   }
 }
 
@@ -2067,6 +2085,16 @@ p {
 
 .reviews__bottom-item:nth-child(6) {
   background: url("../img/rw6.jpg") no-repeat center center/contain;
+}
+
+.reviews .header__top-buy {
+  margin: 30px auto 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews .header__top-buy {
+    margin: -10px auto 50px;
+  }
 }
 
 .bottom-item__text {

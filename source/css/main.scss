@@ -556,13 +556,11 @@ p {
 
 .header__bottom {
     min-height: 935px;
-    /*background: url("../img/bg-main.jpg") no-repeat top/cover;*/
-    background: url("../img/enroll-top-short2.png") no-repeat top/contain;
+    // background: url("../img/enroll-top-short2.png") no-repeat top/contain;
     position: relative;
     color: #fff;
     @include tablets {
         min-height: 700px;
-        background: url("../img/enroll-top-short2.png") no-repeat top/cover;
         /*min-height: 0;
         height: auto;*/
         padding-bottom: 70px;
@@ -1074,7 +1072,7 @@ p {
     color: #233a6a;
     margin: 10px auto 25px;
     text-align: center;
-    font-size: 38px;
+    font-size: 28px;
     @include opensans(obold);
     @include phones {
         font-size: 36px;
@@ -1632,12 +1630,19 @@ p {
         padding-top: 60px;
         padding-bottom: 70px;
     }
+    @include tablets() {
+        min-height: 700px;
+        padding-bottom: 0px;
+    }
 }
 
 .reviews__title {
     text-align: center;
     font-size: 42px;
     margin-bottom: 40px;
+    @include tablets() {
+        margin-bottom: 80px;
+    }
 }
 
 .reviews__bottom {
@@ -1662,6 +1667,7 @@ p {
     @include desktop {
         width: 303px;
         margin: 10px;
+        min-height: 200px;
     }
     @include tablets {
         float: none;
@@ -1671,6 +1677,8 @@ p {
         max-width: 360px;
     }
     @include phones {
+        min-height: auto;
+        margin: 20px auto
     }
 }
 
@@ -1696,6 +1704,13 @@ p {
 
 .reviews__bottom-item:nth-child(6) {
     background: url("../img/rw6.jpg") no-repeat center center/contain;
+}
+
+.reviews .header__top-buy {
+    margin: 30px auto 20px;
+    @include tablets() {
+        margin: -10px auto 50px;
+    }
 }
 
 .bottom-item__text {
