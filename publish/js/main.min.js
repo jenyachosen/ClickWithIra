@@ -1,4 +1,44 @@
 $(document).ready(function() {
+
+	// all models gallery
+	 $('.all-gallery_section').owlCarousel({
+    responsiveClass:true,
+    responsive:{
+        0:{
+				    loop:true,
+				    margin: 250,
+				    items: 1,
+				    center: true,
+				    dots: true,
+				    nav: true,
+				    autoWidth: true,
+				    navContainer: '.all__gallery-section_navs',
+				    dotsContainer: '.all__gallery-section_dots'
+        },
+        768:{
+            loop:true,
+				    margin: 250,
+				    items: 1,
+				    center: true,
+				    dots: true,
+				    nav: true,
+				    autoWidth: true,
+				    navContainer: '.all__gallery-section_navs',
+				    dotsContainer: '.all__gallery-section_dots'
+        },
+        992:{
+            loop:true,
+				    margin: 120,
+				    items: 1,
+				    center: true,
+				    dots: true,
+				    nav: true,
+				    autoWidth: true,
+				   	navContainer: '.all__gallery-section_navs',
+				    dotsContainer: '.all__gallery-section_dots'
+        }
+    }
+  });
 	
 	// about gallery
 	 $('.about__item-gallery_wrap').owlCarousel({
