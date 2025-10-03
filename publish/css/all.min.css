@@ -1039,7 +1039,7 @@ p {
 }
 
 .advantages__item-wrap {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .advantages__item-wrap:before,
@@ -1050,6 +1050,12 @@ p {
 
 .advantages__item-wrap:after {
   clear: both;
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages__item-wrap {
+    padding-top: 30px;
+  }
 }
 
 .advantages__item-pic {
@@ -1168,7 +1174,7 @@ p {
   color: #233a6a;
   margin: 40px auto 0px;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   font-family: "OpenSansBold";
 }
 
@@ -1684,7 +1690,7 @@ p {
 }
 
 .descr_item-title {
-  color: #ffda5e;
+  color: #de88cf;
   text-align: center;
 }
 
@@ -2020,15 +2026,16 @@ p {
   background: url("../img/bg1.svg") no-repeat top/cover;
   color: #fff;
   padding-top: 85px;
+  padding-bottom: 50px;
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .reviews {
     min-height: 0;
     height: auto;
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 
@@ -2041,7 +2048,7 @@ p {
 
 .reviews__title {
   text-align: center;
-  font-size: 42px;
+  font-size: 30px;
   margin-bottom: 40px;
 }
 
@@ -2049,6 +2056,10 @@ p {
   .reviews__title {
     margin-bottom: 80px;
   }
+}
+
+.reviews__bottom {
+  margin-bottom: 30px;
 }
 
 .reviews__bottom:before,
@@ -2064,7 +2075,7 @@ p {
 @media screen and (max-width: 1200px) {
   .reviews__bottom {
     padding-left: 8%;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -2237,7 +2248,8 @@ p {
 .reminder {
   padding: 50px 0 0;
   min-height: 824px;
-  background: url("../img/bg5.svg") no-repeat top/cover;
+  background: #fff;
+  color: #000;
   position: relative;
 }
 
