@@ -297,8 +297,8 @@ p {
 
 .header__top-logo {
     float: left;
-    position: relative;
-    width: 65px;
+    position: absolute;
+    width: 350px;
     height: 65px;
     margin-top: 23px;
     margin-left: 15px;
@@ -339,6 +339,64 @@ p {
         text-decoration: none;
     }
     /*background: url("../img/logo.png") no-repeat center/cover;*/
+}
+
+.header__top-logo_link span {
+    font-size: 6px;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.wave-text span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+.wave-text span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+.wave-text span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+.wave-text span:nth-child(11) {
+    animation-delay: 2s;
+}
+.wave-text span:nth-child(12) {
+    animation-delay: 2.2s;
+}
+
+@keyframes wave {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .navbar-collapse {
@@ -523,6 +581,7 @@ p {
     border: 0 none;
     color: #fff;
     font-size: 14px;
+    animation: pulse 1.5s infinite;
     @include opensans(abold);
     @include phones {
     }
@@ -1029,7 +1088,7 @@ p {
 // about area
 .about {
     padding-top: 40px;
-    background: url("../img/bg6.svg") no-repeat top/cover;
+    background: url("../img/bg1.svg") no-repeat top/cover;
     color: #fff;
     position: relative;
     @include desktop {
@@ -1041,6 +1100,7 @@ p {
         min-height: 0;
     }
     @include phones {
+        padding-top: 20px;
         padding-bottom: 30px;
     }
 }
@@ -1393,7 +1453,7 @@ p {
 }
 
 .descr_item-title {
-    color: #de88cf;
+    color: #ffda5e;
     text-align: center;
 }
 
@@ -1650,6 +1710,9 @@ p {
         min-height: 700px;
         padding-bottom: 0px;
     }
+    @include phones() {
+        padding-top: 30px;
+    }
 }
 
 .reviews__title {
@@ -1748,11 +1811,26 @@ p {
 
 .reviews .header__top-buy {
     margin: 30px auto 20px;
+
     @include desktop() {
         margin: 40px auto 50px;
     }
     @include tablets() {
         margin: -10px auto 50px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -1794,7 +1872,7 @@ p {
 
 // reminder area
 .reminder {
-    padding: 50px 0 0;
+    padding: 50px 0 100px;
     min-height: 824px;
     // background: url("../img/bg5.svg") no-repeat top/cover;
     background: #fff;
@@ -1806,10 +1884,17 @@ p {
     .header__bottom-title {
         margin-top: 70px;
     }
+    @include desktop() {
+        padding-bottom: 25px;
+    }
     @include tablets {
         & .header__bottom-item {
             padding-bottom: 70px;
         }
+    }
+    @include phones() {
+        padding-top: 20px;
+        padding-bottom: 45px;
     }
 }
 
@@ -1834,8 +1919,11 @@ p {
 }
 
 .footer__policy {
-    margin-top: 27px;
+    margin-top: 24px;
     float: left;
+    font-size: 18px;
+    color: #ffda5e;
+    font-weight: bolder;
     margin-left: 15px;
     @include tablets {
         float: none;
@@ -2087,6 +2175,18 @@ xpopup
     .cd-popup-container {
         margin: 100px auto;
     }
+}
+
+.cd-popup-container .header__top-buy_link {
+    margin-top: 11px;
+}
+
+.cd-popup-container .header__top-buy {
+    width: 200px;
+}
+
+.cd-popup-container .descr_item-title {
+    color: #233a6a;
 }
 
 .form-popup {
