@@ -338,6 +338,14 @@ p {
         color: #de88cf;
         text-decoration: none;
     }
+    &:focus {
+        color: #de88cf;
+        text-decoration: none;
+    }
+    &:active {
+        color: #de88cf;
+        text-decoration: none;
+    }
     /*background: url("../img/logo.png") no-repeat center/cover;*/
 }
 
