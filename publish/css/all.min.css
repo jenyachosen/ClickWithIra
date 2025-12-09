@@ -183,6 +183,16 @@ p {
   text-decoration: none;
 }
 
+.header__top-logo_link:active {
+  color: #de88cf;
+  text-decoration: none;
+}
+
+.header__top-logo_link:focus {
+  color: #de88cf;
+  text-decoration: none;
+}
+
 .header__top-logo_link span {
   font-size: 6px;
 }
@@ -551,7 +561,7 @@ p {
 
 .header__bottom {
   min-height: 935px;
-  background: url("../img/enroll-top.jpeg") no-repeat top/contain;
+  background: url("../img/enroll-top.png") no-repeat top/contain;
   position: relative;
   color: #fff;
 }
